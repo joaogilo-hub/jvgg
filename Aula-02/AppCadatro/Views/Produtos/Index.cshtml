@@ -1,0 +1,22 @@
+﻿@model IEnumerable<AulasMCV.Produto>
+
+<h1>Cadastro de Produtos</h1>
+
+<table>
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Nome</td>
+            <td>Quantidade</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model){
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Nome</td>
+                <td>@item.Quantidade</td>
+            </tr>
+        }
+    </tbody>
+</table> 
