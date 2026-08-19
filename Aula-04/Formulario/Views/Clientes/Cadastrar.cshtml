@@ -1,0 +1,192 @@
+@model Formulario.Models.Cliente;
+
+@{
+    ViewData["Title"] = "Cadastro de Clientes";
+}
+
+<div class="container bg-info ">
+
+    <h1 class="text-center mt-2 fw-bold rounded-2 text-light">
+        Cadastro de Clientes
+    </h1>
+
+    <form action="#" method="post">
+
+        <div class="row">
+
+            <!-- Nome -->
+            <div class="col-12 mt-3">
+                <label asp-for="Nome" class="form-label">
+                    Nome Completo
+                </label>
+
+                <input type="text"
+                       class="form-control"
+                       placeholder="Nome Completo..."
+                       asp-for="Nome">
+            </div>
+
+
+            <!-- Endereço -->
+            <div class="col-12 col-lg-9 mt-3">
+                <label asp-for="Endereco" class="form-label">
+                    Endereço
+                </label>
+
+                <input type="text"
+                       class="form-control"
+                       placeholder="Endereço..."
+                       asp-for="Endereco">
+            </div>
+
+
+            <!-- CEP -->
+            <div class="col-12 col-lg-3 mt-3">
+                <label asp-for="CEP" class="form-label">
+                    CEP
+                </label>
+
+                <input type="text"
+                       class="form-control"
+                       placeholder="00000-000"
+                       asp-for="CEP">
+            </div>
+
+
+            <!-- Bairro -->
+            <div class="col-12 col-md-6 mt-3">
+                <label asp-for="Bairro" class="form-label">
+                    Bairro
+                </label>
+
+                <input type="text"
+                       class="form-control"
+                       placeholder="Bairro..."
+                       asp-for="Bairro">
+            </div>
+
+
+            <!-- Cidade -->
+            <div class="col-12 col-md-6 mt-3">
+                <label asp-for="Cidade" class="form-label">
+                    Cidade
+                </label>
+
+                <input type="text"
+                       class="form-control"
+                       placeholder="Cidade..."
+                       asp-for="Cidade">
+            </div>
+
+
+            <!-- UF -->
+            <div class="col-12 col-md-3 mt-3">
+                <label asp-for="UF" class="form-label">
+                    UF
+                </label>
+
+                <input type="text"
+                       class="form-control"
+                       placeholder="SP"
+                       asp-for="UF">
+            </div>
+
+
+            <!-- CPF -->
+            <div class="col-12 col-md-9 mt-3">
+                <label asp-for="CPF" class="form-label">
+                    CPF
+                </label>
+
+                <input type="text"
+                       class="form-control"
+                       placeholder="000.000.000-00"
+                       asp-for="CPF">
+            </div>
+
+
+            <!-- Email -->
+            <div class="col-12 mt-3">
+                <label asp-for="Email" class="form-label">
+                    Email
+                </label>
+
+                <input type="email"
+                       class="form-control"
+                       placeholder="exemplo@email.com"
+                       asp-for="Email">
+            </div>
+
+
+            <!-- Celular -->
+            <div class="col-12 col-md-6 mt-3">
+                <label asp-for="Celular" class="form-label">
+                    Celular
+                </label>
+
+                <input type="text"
+                       class="form-control"
+                       placeholder="(00) 00000-0000"
+                       asp-for="Celular">
+            </div>
+
+
+            <!-- Data de nascimento -->
+            <div class="col-12 col-md-6 mt-3">
+                <label asp-for="DataNascimento" class="form-label">
+                    Data de Nascimento
+                </label>
+
+                <input type="date"
+                       class="form-control"
+                       asp-for="DataNascimento">
+            </div>
+
+
+            <!-- Código -->
+            <div class="col-12 col-md-4 mt-3">
+                <label asp-for="Id" class="form-label">
+                    Código
+                </label>
+
+                <input type="number"
+                       class="form-control"
+                       placeholder="Código do Cliente"
+                       asp-for="Id">
+            </div>
+
+
+            <!-- Observação -->
+            <div class="col-12 mt-3">
+                <label asp-for="Observacao" class="form-label">
+                    Observação
+                </label>
+
+                <textarea class="form-control"
+                          rows="4"
+                          placeholder="Digite alguma observação..."
+                          asp-for="Observacao"></textarea>
+            </div>
+
+        </div>
+
+
+        <!-- Botões -->
+        <div class="row mt-5">
+
+            <div class="col-12 col-md-6 text-center mb-3">
+                <input type="reset"
+                       value="Limpar"
+                       class="w-75 btn btn-secondary">
+            </div>
+
+            <div class="col-12 col-md-6 text-center mb-3">
+                <input type="submit"
+                       value="Enviar"
+                       class="w-75 btn btn-primary">
+            </div>
+
+        </div>
+
+    </form>
+</div>

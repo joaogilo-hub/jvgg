@@ -1,0 +1,75 @@
+@model Atividade
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form>
+
+    <div class="text-center">
+        <h1 class="display-4">Cadastro do Cliente</h1>
+    </div>
+
+    <div>
+        <label asp-for="Cidade">Cidade</label>
+        <input type="text"
+               class="form-control"
+               placeholder="Sua Cidade..."
+               asp-for="Cidade" />
+    </div>
+
+    <div>
+        <label asp-for="Nome">Nome</label>
+        <input type="text"
+               class="form-control"
+               placeholder="Seu Nome..."
+               asp-for="Nome" />
+    </div>
+
+    <div>
+        <label asp-for="Endereço">Endereço</label>
+        <input type="text"
+               class="form-control"
+               placeholder="Seu Endereço..."
+               asp-for="Endereço" />
+    </div>
+
+    <div>
+        <label asp-for="Bairro">Bairro</label>
+        <input type="text"
+               class="form-control"
+               placeholder="Seu Bairro..."
+               asp-for="Bairro" />
+    </div>
+
+    <div>
+        <label asp-for="Uf">Uf</label>
+        <input type="text"
+               class="form-control"
+               placeholder="Seu Uf..."
+               asp-for="Uf" />
+    </div>
+
+    <div class="col-12 col-md-6 col-lg mt-3">
+        <label asp-for="Id">Id</label>
+        <input type="text"
+               class="form-control"
+               placeholder="Seu Id..."
+               asp-for="Id" />
+    </div>
+
+    <div class="row mt-5">
+        <div class="col text-center">
+            <input type="reset"
+                   value="Limpar"
+                   class="w-50 btn btn-outline-secondary" />
+        </div>
+
+        <div class="col text-center">
+            <input type="submit"
+                   value="Enviar"
+                   class="w-50 btn btn-primary" />
+        </div>
+    </div>
+
+</form>
